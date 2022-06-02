@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProjectUsers">
+   <children>
+      <ScrollPane prefHeight="115.0" prefWidth="533.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="113.0" prefWidth="530.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Nom projet" />
+                  <Label layoutX="14.0" layoutY="36.0" text="Chef Project" />
+                  <Label layoutX="14.0" layoutY="56.0" text="Nombre d'employees" />
+                  <Label layoutX="14.0" layoutY="75.0" text="Etat" />
+                  <Label fx:id="nom" layoutX="163.0" layoutY="17.0" text="Nom projet" />
+                  <Label fx:id="chef" layoutX="163.0" layoutY="39.0" text="Chef Project" />
+                  <Label fx:id="nbr" layoutX="163.0" layoutY="59.0" text="Nombre d'employees" />
+                  <Label fx:id="stat" layoutX="163.0" layoutY="78.0" text="Etat" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutY="158.0" prefHeight="390.0" prefWidth="880.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="158.0">
+         <content>
+            <VBox fx:id="list" prefHeight="456.0" prefWidth="878.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="457.0" prefWidth="878.0">
+                    <columns>
+                      <TableColumn fx:id="name" prefWidth="77.0" text="name" />
+                      <TableColumn fx:id="email" prefWidth="150.0" text="email" />
+                        <TableColumn fx:id="salary" prefWidth="75.0" text="Salary" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="14.0" layoutY="134.0" text="Les employées" />
+      <FlowPane alignment="CENTER" layoutY="625.0" prefHeight="40.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#details" text="Details" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#delete" text="Delete">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#add" text="Add">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

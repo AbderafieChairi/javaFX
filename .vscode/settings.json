@@ -1,0 +1,31 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.base.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.controls.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.fxml.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.graphics.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.media.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.swing.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx.web.jar",
+        "c:\\Javalibs\\javafx-sdk-18\\lib\\javafx-swt.jar",
+        "c:\\Javalibs\\mysql-connector-java-8.0.27.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Connect",
+            "username": "root",
+            "database": "entreprise",
+            "password": ""
+        }
+    ]
+}
